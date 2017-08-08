@@ -4,7 +4,7 @@ This is a sample that uses the Vert.x(3.x) as a socket server. It can receive th
 
 I assumed that you have installed the redis and know how to pub/sub messages.
 
-This program allow you to receive redis client message(can be realized by Python, Java or any other language).
+This program allow you to receive redis client message(can be realized by Python, Java or any other language) and resent to the front.
 # dependencies
 
 #### Maven
