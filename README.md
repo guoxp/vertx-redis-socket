@@ -21,7 +21,7 @@ This program allow you to receive redis client message(can be realized by Python
     <version>3.4.2</version>
 </dependency>
 ```
-#### configuration
+# configuration
 
 ```java
 //redis 
