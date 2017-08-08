@@ -19,8 +19,6 @@ public class VertRedis extends AbstractVerticle{
 
 	@Override
 	public void start(Future<Void> future) {
-		//HttpServer server = vertx.createHttpServer();
-
 		// register a handler for the incoming message the naming the Redis module will use is base address + '.' + redis channel
 		vertx.eventBus().<JsonObject>consumer("io.vertx.redis.chatchannel", received -> {
 			// do whatever you need to do with your message
@@ -46,17 +44,5 @@ public class VertRedis extends AbstractVerticle{
 
 			System.out.println(res.result());
 		});
-		/*redisClient.publish("chatchanne", res -> {
-
-		});*/
-
-		/*redisClient.get("chatchannel", res -> {
-			if (res.succeeded()) {
-				System.out.println(Json.encodePrettily(res.result()));
-			}
-		});*/
-
-
-		//server.listen(3000);
 	}
 }
