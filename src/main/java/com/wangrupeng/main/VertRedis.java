@@ -35,7 +35,7 @@ public class VertRedis extends AbstractVerticle{
 		RedisOptions config = new RedisOptions()
 				.setHost("192.168.1.6")
 				.setPort(6379)
-				.setAuth("hadoop@oceanai");
+				.setAuth("password");
 
 		RedisClient redisClient = RedisClient.create(vertx, config);
 

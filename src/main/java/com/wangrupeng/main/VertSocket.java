@@ -31,7 +31,7 @@ public class VertSocket extends AbstractVerticle {
     RedisOptions config = new RedisOptions()
             .setHost("192.168.1.6")
             .setPort(6379)
-            .setAuth("hadoop@oceanai");
+            .setAuth("password");
 
     Router router = Router.router(vertx);
 
